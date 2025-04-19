@@ -1,15 +1,13 @@
 # Wireshark MCP
 
-Wireshark MCP 是一个基于 Model Context Protocol (MCP) 的服务器，允许 AI 助手通过 tshark 命令行工具与 Wireshark 进行交互。该工具提供了丰富的网络数据分析功能，支持实时抓包和离线分析。
+Wireshark MCP 是一个基于 Model Context Protocol (MCP) 的服务器，允许 AI 助手通过 tshark 命令行工具与 Wireshark 进行交互。它将 Wireshark/tshark 的强大功能与大语言模型(LLM)的智能分析能力相结合。通过 Model Context Protocol (MCP)，该工具能够让 AI 助手直接与 tshark 进行交互，实现智能化的网络数据分析。
 
 ## 功能特性
 
 ### 基础功能
-- 利用 llm 分析已有的 pcap 文件   -我需要的主要功能,其他功能都是 tshark 带的
-- 实时网络抓包分析
-- 列出可用网络接口
-- 支持 BPF 和 Display 过滤器
-- JSON 格式输出便于解析
+- AI 驱动分析：突出自然语言交互、智能异常检测等特性
+- 交互方式：详细说明对话式分析、智能过滤和结果解读功能
+- LLM 增强功能：描述了协议分析、安全分析、性能诊断和统计分析等增强功能
 
 ## 系统要求
 
@@ -49,17 +47,15 @@ http://127.0.0.1:3000/status
 ![使用效果](docs/images/286201745081603_.pic.jpg)
 ![使用效果](docs/images/286211745081627_.pic.jpg)
 
-## 性能优化
+## 其他
 
 - 数据包数量限制：默认限制为 5000 个数据包
-- 自动统计分析：支持 Top 10 分析
-- 结果格式化：优化中文显示
-- 错误处理：详细的错误信息提示
+- 有点意思,不过意思不大,太耗大模型 tokens,还不用调用 tshark 命令直接查.
 
 ## 许可证
 
 Apache License 2.0 
 
-## 感谢
+## 特别感谢
 https://mp.weixin.qq.com/s/G_6efZFEgGTeOcRtyaNS1g?poc_token=HKpP_2ejJpvhJJ4EJ9J-8b9U5eZ3U0Jvkk_YPKoO
 https://github.com/shubham-s-pandey/WiresharkMCP
