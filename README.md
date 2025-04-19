@@ -71,61 +71,7 @@ http://127.0.0.1:3000/status
 
 ## 使用效果
 
-### 1. 数据包分析
-分析 pcap 文件中的数据包，支持多种过滤和统计功能：
 
-```python
-# 分析示例
-analyze_pcap("/path/to/capture.pcap", filter="http")
-```
-
-输出示例：
-```json
-{
-    "total_packets": 1000,
-    "filtered_packets": 150,
-    "protocols": {
-        "HTTP": 120,
-        "TCP": 150,
-        "UDP": 50
-    }
-}
-```
-
-### 2. 错误包检测
-自动检测网络异常，包括：
-- TCP 重传
-- 重复确认包
-- 丢失段
-- 格式错误包
-
-```python
-# 错误检测示例
-analyze_errors("/path/to/capture.pcap")
-```
-
-### 3. 字段提取与统计
-支持提取特定字段并进行统计分析：
-
-```python
-# 提取源IP地址
-extract_fields("/path/to/capture.pcap", fields=["ip.src"])
-```
-
-统计结果示例：
-```json
-{
-    "unique_values": 8,
-    "total_packets": 1000,
-    "top_10": [
-        {
-            "value": "192.168.1.1",
-            "count": 150,
-            "percentage": "15%"
-        }
-    ]
-}
-```
 
 ### 4. 实时抓包
 支持实时网络监控和分析：
