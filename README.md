@@ -62,7 +62,7 @@ http://127.0.0.1:3000/status
 
 3. 配置客户端 MCP 服务器:
 
-![MCP配置示例](docs/images/mcp_config.png)
+![MCP配置示例](docs/images/286191745081560_.pic.jpg)
 
 配置说明：
 - 名称：wireshark
